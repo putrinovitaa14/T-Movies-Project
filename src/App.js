@@ -1,4 +1,5 @@
 import { Route, Routes } from "react-router-dom";
+import Detail from "./components/Detail";
 import Navbar from "./components/Navbar";
 import { AuthContextProvider } from "./context/AuthContext";
 import Account from "./pages/Account";
@@ -16,7 +17,9 @@ function App() {
         <Route path='/login' element={<Login />} />
         <Route path='/signup' element={<Signup />} />
         <Route path='/account' element={<Account />} />
+        {/* <Route path='/detail' element={<Detail/>} /> */}
       </Routes>
+      <Detail />
       </AuthContextProvider>
     </>
   );
