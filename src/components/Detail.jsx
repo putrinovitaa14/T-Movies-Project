@@ -52,25 +52,38 @@ export default function Detail() {
                                     <img className='w-auto h-auto block ' src={`../favicon.png`} />
                                     <Dialog.Title
                                         as="h3"
-                                        className="text-lg font-medium leading-6 text-white"
-                                    >
-                                        The Conjoring
+                                        className="text-lg font-medium leading-6 text-white top-4">
+                                        <p className='text-sm font-times text-white font-bold'>Judul:</p>
+                                        <p className='text-white font-normal m-1'>The Conjoring</p>
                                     </Dialog.Title>
                                     <div className="mt-2">
-                                        <p className="text-sm text-white">
+                                        <p className=' text-white font-times text-sm '> <span className='text-sm font-bold mx-5'>Sinopsis:</span>
                                             Film ini dibintangi oleh Vera Farmiga dan Patrick Wilson,
                                             yang berperan sebagai Ed dan Lorraine Warren, dan diangkat dari kisah nyata yang dialami
                                             oleh Warren, pengalamannya juga mengilhami kisah Amityville Horror.
                                         </p>
                                     </div>
+                                    <div className='m-0'>
+                                        <p className='text-sm  text-white font-times top-10 m-auto'>Genre : Horror</p>
+                                        {/* <p className='text-sm font-semibold text-white top-2 m-1'>Horror</p> */}
+
+                                    </div>
 
                                     <div className="mt-4">
                                         <button
                                             type="button"
-                                            className="inline-flex justify-center rounded-md border border-transparent bg-blue-100 px-4 py-2 text-sm font-medium text-blue-900 hover:bg-blue-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2"
+                                            className="inline-flex justify-center rounded-md border border-transparent bg-blue-100 px-4 py-2 text-sm font-medium hover:bg-blue-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2"
                                             onClick={closeDetail}
                                         >
-                                            Got it, thanks!
+                                            Back
+                                        </button>
+
+                                        <button
+                                            type="button"
+                                            className="inline-flex justify rounded-md border right-10 border-transparent bg-blue-100 px-4 py-2 text-sm font-medium text-blue-900 hover:bg-blue-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2"
+                                            onClick={closeDetail}
+                                        >
+                                            Buy Ticket
                                         </button>
                                     </div>
                                 </Dialog.Panel>
